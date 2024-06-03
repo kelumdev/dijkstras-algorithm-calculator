@@ -1,5 +1,5 @@
 import { expect, describe, it } from 'vitest'
-import {dijkstra} from '../dijkstra'
+import { dijkstra } from '../dijkstra'
 
 const graphState = {
   "adjacencyList": {
@@ -61,19 +61,19 @@ const graphState = {
 }
 
 describe('Dijkstra Algorithm', () => {
-  it('If from and to nodes are same', () => {
+  it('If FROM and TO nodes are same', () => {
     expect(dijkstra(graphState, 'A', 'A')).toMatchObject({
       distance: 0,
       nodeNames: [],
     })
   })
-  it('If to Node undefined', () => {
+  it('If TO node undefined', () => {
     expect(dijkstra(graphState, 'A', undefined)).toMatchObject({
       distance: undefined,
       nodeNames: [],
     })
   })
-  it('If both from and to nodes are empty', () => {
+  it('If both FROM and TO nodes are empty', () => {
     expect(dijkstra(graphState, ' ', ' ')).toMatchObject({
       distance: 0,
       nodeNames: [],
