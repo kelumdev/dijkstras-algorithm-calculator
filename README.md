@@ -1,15 +1,15 @@
 # Dijkstra's Algorithm Calculator
 
-<img src="https://curious-halva-9294ed.netlify.app/calculator.jpg?width=890&button=false" />
+<img src="https://curious-halva-9294ed.netlify.app/calculator.jpg?width=500&button=false" />
 
 This React project, built with Vite and TypeScript, provides an interactive tool for calculating optimal routes using Dijkstra's algorithm. It efficiently determines the shortest paths between nodes in a graph.
+
+Demo URL: [https://curious-halva-9294ed.netlify.app](https://curious-halva-9294ed.netlify.app/)
 
 ## Features
 
 * Calculate the shortest path between any two nodes in a Graph.
 * Display the traversed path and its total distance.
-
-Demo URL: [https://curious-halva-9294ed.netlify.app](https://curious-halva-9294ed.netlify.app/)
 
 ## Installation
 
