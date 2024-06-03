@@ -4,7 +4,7 @@
 
 This React project, built with Vite and TypeScript, provides an interactive tool for calculating optimal routes using Dijkstra's algorithm. It efficiently determines the shortest paths between nodes in a graph, making it valuable for various applications like navigation, network optimization, and resource allocation.
 
-Working demo: [https://curious-halva-9294ed.netlify.app](https://curious-halva-9294ed.netlify.app/)
+Demo URL: [https://curious-halva-9294ed.netlify.app](https://curious-halva-9294ed.netlify.app/)
 
 ## Features
 
