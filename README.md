@@ -8,7 +8,7 @@ Demo URL: [https://curious-halva-9294ed.netlify.app](https://curious-halva-9294e
 
 ## Features
 
-* Calculate the shortest path between any two nodes in a Graph.
+* Calculate the shortest path between selected two nodes in a Graph.
 * Display the traversed path and its total distance.
 
 ## Installation
