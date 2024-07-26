@@ -19,9 +19,9 @@ const ResultCard: React.FC<ResultCardProps> = ({
       <div className='result-card-inner bg-white p-[24px] h-[364px]'>
         <p className='mb-[24px] text-sm text-[#5A5B5D]'>
           From Node Name = “{fromNode}”, To Node Name = ”{toNode}”:{' '}
-          {nodeNames?.join(', ')}
+          {nodeNames?.join('. ')}
         </p>
-        <p className='text-sm text-[#5A5B5D]'>Total Distance: {distance}</p>
+        <p className='text-sm text-[#5A5B5D]'>Total Distance: <strong>{distance}</strong></p>
       </div>
     </div>
   )

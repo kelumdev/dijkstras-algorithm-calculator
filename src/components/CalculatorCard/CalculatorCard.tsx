@@ -64,9 +64,9 @@ const CalculatorCard: React.FC<CalculatorCardProps> = () => {
 
     addEdge('A', 'B', 4, setGraphState)
     addEdge('A', 'C', 6, setGraphState)
-    addEdge('B', 'A', 4, setGraphState)
+    // addEdge('B', 'A', 4, setGraphState)
     addEdge('B', 'F', 2, setGraphState)
-    addEdge('C', 'A', 6, setGraphState)
+    // addEdge('C', 'A', 6, setGraphState)
     addEdge('C', 'D', 8, setGraphState)
     addEdge('D', 'C', 8, setGraphState)
     addEdge('D', 'E', 4, setGraphState)
@@ -78,15 +78,18 @@ const CalculatorCard: React.FC<CalculatorCardProps> = () => {
     addEdge('F', 'B', 2, setGraphState)
     addEdge('F', 'E', 3, setGraphState)
     addEdge('F', 'G', 4, setGraphState)
-    addEdge('F', 'H', 6, setGraphState)
+    // addEdge('F', 'H', 6, setGraphState)
     addEdge('G', 'D', 1, setGraphState)
     addEdge('G', 'F', 4, setGraphState)
-    addEdge('G', 'H', 5, setGraphState)
+    // addEdge('G', 'H', 5, setGraphState)
     addEdge('G', 'I', 5, setGraphState)
-    addEdge('H', 'F', 6, setGraphState)
-    addEdge('H', 'G', 5, setGraphState)
+    // addEdge('H', 'F', 6, setGraphState)
+    // addEdge('H', 'G', 5, setGraphState)
     addEdge('I', 'E', 8, setGraphState)
     addEdge('I', 'G', 5, setGraphState)
+
+    console.error("Something`s wrong with the graph state")
+    console.error("SyntaxError: Unexpected token 'export'")
   }, [])
 
   const fetchRandomNumberHandler = async () => {
@@ -230,11 +233,11 @@ const CalculatorCard: React.FC<CalculatorCardProps> = () => {
               <h3 className='text-lg text-color-primary font-semibold mb-[24px]'>
                 Select Path
               </h3>
-              <div className='form-row mb-[24px]'>
+              <div className='form-row mb-[24px] md:mb-0'>
                 <CustomSelect
                   id='fromNode'
                   placeholder='Select'
-                  label='From node'
+                  label='From node:'
                   options={SELECT_OPTIONS}
                   value={fromSelectedOption}
                   disabled={isSelectDisabled}
@@ -245,7 +248,7 @@ const CalculatorCard: React.FC<CalculatorCardProps> = () => {
                 <CustomSelect
                   id='toNode'
                   placeholder='Select'
-                  label='To node'
+                  label='To node:'
                   options={SELECT_OPTIONS}
                   value={toSelectedOption}
                   disabled={isSelectDisabled}
@@ -256,7 +259,7 @@ const CalculatorCard: React.FC<CalculatorCardProps> = () => {
                 {mode !== 'random' && (
                   <Button
                     appearance='outline'
-                    className='mr-[12px] h-[44px]'
+                    className='mr-[12px] h-[44px] w-full'
                     type='reset'
                     disabled={isClearBtnDisabled}
                     onClick={clearBtnHandler}>
@@ -269,7 +272,7 @@ const CalculatorCard: React.FC<CalculatorCardProps> = () => {
                   onClick={calculateHandler}
                   loading={isAppLoading}
                   disabled={isCalculateBtnDisabled}
-                  className='min-w-[146px] h-[44px]'>
+                  className='min-w-[146px] h-[44px] w-full'>
                   {mode == 'input' ? 'Calculate' : 'Calculate Random'}
                 </Button>
               </div>
